@@ -1,44 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer" />
-</head>
-<body>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
     <div class="header">
-     <div class="left" > <img class="logo" src="./logo.PNG" alt=""></div> 
+      <div class="left"><img class="logo" src="./top-logo.PNG" alt="" /></div>
       <div class="right">
-        <div class="call"><i class="fa-solid fa-phone call-icon"></i>
-       <span>9158052727</span></div>
-       <button class="get-franch">Get a Franchaise</button>
-       <i class="fa-solid fa-bars"></i></div> 
+        <div class="call">
+          <i class="fa-solid fa-phone call-icon-header"></i>
+          <span>9158052727</span>
+        </div>
+        <button class="get-franch">Get a Franchaise</button>
+        <i class="fa-solid fa-bars" id="menubars"></i>
+      </div>
+    </div>
+    <div class="sidemenu hideSidemenu">
+      <div class="sidemenu-heading">
+        <!-- <span>Sarpanch Ammruttulya</span> -->
+        <img class="logo-sidemenu" src="./logo.PNG" alt="" />
+        <i class="fa-regular fa-circle-xmark" id="menuclose"> </i>
+      </div>
+      <div class="sidemenufunctions">
+        <a href="#home"> <span>Home</span></a>
+        <a href="#about"><span>About Us</span></a>
+        <a href="#products"><span>Products</span></a>
+        <a href="#gallery"><span>Gallery</span></a>
+        <a href=""><span>Get a franchise</span></a>
+        <a href="#contact"><span>Contact Us</span></a>
+      </div>
     </div>
     <div class="main-container">
-        <div class="heading">
-            <img class="heading-logo" src="./logo.PNG" alt="">
+      <div class="container-1" id="home">
+        <div class="slider1">
+          <ul id="list">
+            <li><img id="image0" src="./product-ginger-tea.png" alt="image one" /></li>
+            <li><img id="image0"  src="./Sarpanchlemon-4.JPEG" alt="image two" /></li>
+            <li><img id="image0" src="./product-black-tea.png" alt="image three" /></li>
+             <li><img id="image0" src="./sarpanchregular-2.JPEG" alt=""></li>
+          </ul>
         </div>
+        <!-- <div class="heading">
+          <img class="heading-logo" src="./logo.PNG" alt="" />
+        </div> -->
         <div class="slider">
-            <ul>
-              <li><img src="./IMG_2.jpg" alt="image one" /></li>
-              <li><img src="./sarpnch1.PNG" alt="image two" /></li>
-              <li><img src="./IMG_3.jpg" alt="image three" /></li>
-              <li><img src="./IMG_1.jpg" alt="image four" /></li>
-              <li><img src="./mobileBanner.png" alt="image5"></li>
-            </ul>
-          </div>
-            
-         
+          <ul>
+            <li><img src="./IMG_2.jpg" alt="image one" /></li>
+            <li><img src="./sarpnch1.PNG" alt="image two" /></li>
+            <li><img src="./IMG_3.jpg" alt="image three" /></li>
+            <li><img src="./IMG_1.jpg" alt="image four" /></li>
+            <li><img src="./mobileBanner.png" alt="image5" /></li>
+          </ul>
+        </div>
+      </div>
 
-</div>
-<script src="./script.js"></script>
-</body>
+      <div class="container-2" id="about">
+        <h4>About Us</h4>
+        <div class="profile"></div>
+        <div class="details"></div>
+      </div>
+      <div class="container-3" id="products">
+        <div class="product-top">
+          <div class="left">
+            <h1>PREMIUM QUALI-TEA PRODUCTS PLEN-TEA!</h1>
+            <h6>
+              Premium quality, sought after taste, carefully curated recipes,
+              the original flavour of teas and some snack options that will
+              refresh you from within. Explore our range of teas, beverages and
+              other food products below.
+            </h6>
+          </div>
+          <div class="right">
+            <img src="./sarpnch1.PNG" alt="" />
+          </div>
+        </div>
+        <div class="product-heading"><h2>Products</h2></div>
+        <hr>
+        <div class="product-list">
+          <div class="ourproductsBox">
+            <img class="product-images" src="./sarpanchtea-1.JPEG" alt="" />
+          </div>
+          <div class="ourproductsBox">
+            <img class="product-images" src="./sarpanchregular-2.JPEG" alt="" />
+            
+          </div>
+          <div class="ourproductsBox">
+            <img class="product-images" src="./sarpanchjaggery-3.JPEG" alt="" />
+             
+          </div>
+          <div class="ourproductsBox">
+            <img class="product-images" src="./Sarpanchlemon-4.JPEG" alt="" />
+            
+          </div>
+          <div class="ourproductsBox">
+            <img class="product-images" src="./sarpancrem-roll.JPEG" alt="" />
+             
+          </div>
+           
+           
+        </div>
+      </div>
+      <div class="container-4" id="gallery">
+        <h4>Gallery</h4>
+      </div>
+      <div class="container-5" id="contact">
+        <div class="contact-top">
+          <div class="cont-left">
+            <h1>CONTACT US</h1>
+            <h6>
+              Premium quality, sought after taste, carefully curated recipes,
+              the original flavour of teas and some snack options that will
+              refresh you from within. Explore our range of teas, beverages and
+              other food products below.
+            </h6>
+          </div>
+          <div class="cont-right">
+            <img src="./sarpnch1.PNG" alt="" />
+          </div>
+        </div>
+        <div class="middle">
+          <div class="middle-content1">
+            
+          <h4>CALL TODAY</h4><span>9158052727</span></div>
+          <div class="middle-content2">
+            <h4>REQUEST A QUOTE</h4><span>9158052727</span></div>
+            <div class="middle-content3">
+              <h4>EMAIL US</h4><span>9158052727</span></div>
+
+        </div>
+        <div class="contact-heading">
+          <h1>GET IN TOUCH</h1>
+        </div>
+        <div class="first-container">
+          <div class="icons-left">
+            <div class="address">
+              <div class="add-icon">
+                <i class="fa-solid fa-location-dot contact-icon"></i>
+              </div>
+              <div class="add-text">
+                <span>Address</span>
+                <span>pune</span>
+              </div>
+            </div>
+            <div class="email">
+              <div class="mail-icon">
+                <i class="fa-solid fa-envelope contact-icon"></i>
+              </div>
+              <div class="mail-text">
+                <span>Email</span>
+                <span>pranavdate908@gmail.com</span>
+              </div>
+            </div>
+            <div class="phone">
+              <div class="call-icon">
+                <i class="fa-solid fa-phone contact-icon"></i>
+              </div>
+              <div class="call-text">
+                <span>Call</span>
+                <span>9158052727</span>
+              </div>
+            </div>
+          </div>
+          <div class="input-right">
+            <div class="name-field">
+              <input class="first-last" type="text" placeholder=" full name" />
+              <input class="first-last" type="number" placeholder="contact number" />
+            </div>
+            <div class="input-message">
+              <input type="email" placeholder="email" />
+              <input type="text" placeholder="enter your message" />
+            </div>
+            <button class="send-message">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
