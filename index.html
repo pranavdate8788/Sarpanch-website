@@ -1,195 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <div class="header">
-    <div class="left"><img class="logo" src="./top-logo.PNG" alt="" /></div>
-    <div class="right">
-      <div class="call">
-        <i class="fa-solid fa-phone call-icon-header"></i>
-        <span>9158052727</span>
+  <body>
+    <div class="header">
+      <div class="left"><img class="logo" src="./new-logo.PNG" alt="" /></div>
+      <div class="right">
+        <div class="call">
+          <i class="fa-solid fa-phone call-icon-header"></i>
+          <span>9158052727</span>
+        </div>
+        <a href="#franchise"
+          ><button class="get-franch">Get a Franchaise</button></a
+        >
+        <i class="fa-solid fa-bars" id="menubars"></i>
       </div>
-      <button class="get-franch">Get a Franchaise</button>
-      <i class="fa-solid fa-bars" id="menubars"></i>
     </div>
-  </div>
-  <div class="sidemenu hideSidemenu">
-    <div class="sidemenu-heading">
-      <!-- <span>Sarpanch Ammruttulya</span> -->
-      <img class="logo-sidemenu" src="./logo.PNG" alt="" />
-      <i class="fa-regular fa-circle-xmark" id="menuclose"> </i>
-    </div>
-    <div class="sidemenufunctions">
-      <a href="#home"> <span>Home</span></a>
-      <a href="#about"><span>About Us</span></a>
-      <a href="#products"><span>Products</span></a>
-      <a href="#gallery"><span>Gallery</span></a>
-      <a href=""><span>Get a franchise</span></a>
-      <a href="#contact"><span>Contact Us</span></a>
-    </div>
-  </div>
-  <div class="main-container">
-    <div class="container-1" id="home">
-      <div class="slider1">
-        <ul id="list">
-          <li><img id="image0" src="./product-ginger-tea.png" alt="image one" /></li>
-          <li><img id="image0" src="./Sarpanchlemon-4.JPEG" alt="image two" /></li>
-          <li><img id="image0" src="./product-black-tea.png" alt="image three" /></li>
-          <li><img id="image0" src="./sarpanchregular-2.JPEG" alt=""></li>
-        </ul>
+    <div class="sidemenu hideSidemenu">
+      <div class="sidemenu-heading">
+        <!-- <span>Sarpanch Ammruttulya</span> -->
+        <img class="logo-sidemenu" src="./new-logo.PNG" alt="" />
+        <i class="fa-regular fa-circle-xmark" id="menuclose"> </i>
       </div>
-      <!-- <div class="heading">
+      <div class="sidemenufunctions">
+        <a href="#home"> <span>Home</span></a>
+        <a href="#about"><span>About Us</span></a>
+        <a href="#products"><span>Products</span></a>
+        <a href="#gallery"><span>Gallery</span></a>
+        <a href="#franchise"><span>Get a franchise</span></a>
+        <a href="#contact"><span>Contact Us</span></a>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="container-1" id="home">
+        <div class="slider1">
+          <ul id="list">
+            <li id="image0" class="marathi-heading">
+              <h1>सरपंच अमृततुल्य...!</h1>
+              <h2>एकदा पिऊन तर पहा...</h2>
+            </li>
+            <li><img id="image0" src="./logo.PNG" alt="image one" /></li>
+            <li><img id="image0" src="./logo-2.PNG" alt="image two" /></li>
+            <li><img id="image0" src="./new-logo.PNG" alt="image three" /></li>
+            <li><img id="image0" src="./top-logo.PNG" alt="" /></li>
+          </ul>
+        </div>
+        <!-- <div class="heading">
           <img class="heading-logo" src="./logo.PNG" alt="" />
         </div> -->
-      <div class="slider2">
-        <ul>
-          <li><img src="./IMG_2.jpg" alt="image one" /></li>
-          <li><img src="./sarpnch1.PNG" alt="image two" /></li>
-          <li><img src="./IMG_3.jpg" alt="image three" /></li>
-          <li><img src="./IMG_1.jpg" alt="image four" /></li>
-          <li><img src="./mobileBanner.png" alt="image5" /></li>
-        </ul>
+        <div class="slider2">
+          <ul>
+            <li><img src="./Sarpanch-2.PNG" alt="image two" /></li>
+            <li><img src="./IMG_2.jpg" alt="image one" /></li>
+            <li><img src="./IMG_3.jpg" alt="image three" /></li>
+            <li><img src="./IMG_1.jpg" alt="image four" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container-2" id="about">
+        <div class="abt-top">
+          <div class="abt-topleft">
+            <h1>FROM HOME TO AWAY</h1>
+            <hr />
+            <h3>The road ahead</h3>
+            <hr />
+          </div>
+          <div class="abt-topright">
+            <img class="roadmap" src="./roadmap.jpg" alt="" />
+          </div>
+        </div>
+        <div class="abt-1">
+          <div class="abt-1left">
+            <h1>THE JOURNEY OF A CUP OF TEA</h1>
+            <h6>
+              A CUP OF TEA It is said that if you conquer Pune, you can conquer
+              the world. 'Yewale Chaha' has won Pune's heart and is now set to
+              win over not only Maharashtra but India and the World’s hearts. It
+              is our dream to serve Yewale Chaha to tea lovers across the globe,
+              for which we have taken a big leap and now are planning for a
+              giant one. The entire next generation of the Yewale clan is
+              striving to make Yewale Tea a world-class brand with the best
+              quality and service. The secret behind Yewale Amruttulya’s growth
+              and success lies in its unmatched taste, credit for which goes to
+              the Yewale family and their dedication to devising a recipe that
+              ensures a similar taste at all of their branches. This has helped
+              the brand establish impeccable planning, meticulous management and
+              best service throughout the branches.
+            </h6>
+          </div>
+          <div class="abt-1right">
+            <img src="./franch5.jpg" alt="" />
+          </div>
+        </div>
+        <div class="abtqlty">
+         <div class="qltyleft">
+<h1>
+  QUALITY IS
+DEFINITELY
+OUR CUP OF TEA
+</h1>
+<h4>
+  We strongly believe that making good tea is no joke! It is a culinary art that requires patience, knowledge of locally sourced ingredients, their quality and strategic decisions regarding alterations of recipes. From hygiene to the quality of tea powder, the balance of ingredients to the amount of sugar, everything is dealt with precision and perfection.
+</h4>
+         </div>
+         <div class="qltyright">
+<img class="qltyimage" src="./qualityImg.png" alt="">
+         </div>
+
+        </div>
+        <div class="abt-footer">
+          <h1 class="team-heading" >OUR TEAM</h1>
+          <div class="team">
+<div class="team-box">
+  <img class="team-img" src="./anna.jpg" alt="">
+  <span class="name" >SURAJ DATE</span>
+  <span class="post">Manager</span>
+  <div class="team-footer">
+    <i class="fa-brands  fa-facebook-f ic"></i>
+    <i class="fa-brands fa-whatsapp ic"></i>
+    <i class="fa-brands fa-instagram ic"></i>
+    <i class="fa-brands fa-youtube ic"></i>
+
+  </div>
+</div>
+<div class="team-box">
+  <img class="team-img" src="./ sahil (1).jpg" alt="">
+  <span class="name" >SAHIL DATE</span>
+  <span class="post">Manager</span>
+  <div class="team-footer">
+    <i class="fa-brands  fa-facebook-f ic"></i>
+    <i class="fa-brands fa-whatsapp ic"></i>
+    <i class="fa-brands fa-instagram ic"></i>
+    <i class="fa-brands fa-youtube ic"></i>
+
+  </div>
+</div>
+<div class="team-box">
+  <img class="team-img" src="./sumit.jpg" alt="">
+  <span class="name">SUMIT DATE</span>
+  <span class="post">Manager</span>
+  <div class="team-footer">
+    <i class="fa-brands  fa-facebook-f ic"></i>
+    <i class="fa-brands fa-whatsapp ic"></i>
+    <i class="fa-brands fa-instagram ic"></i>
+    <i class="fa-brands fa-youtube ic"></i>
+
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+      <div class="container-3" id="products">
+        <div class="product-top">
+          <div class="left">
+            <h1>PREMIUM QUALI-TEA PRODUCTS PLEN-TEA!</h1>
+            <h6>
+              Premium quality, sought after taste, carefully curated recipes,
+              the original flavour of teas and some snack options that will
+              refresh you from within. Explore our range of teas, beverages and
+              other food products below.
+            </h6>
+          </div>
+          <div class="right">
+            <img src="./Sarpanch-2.PNG" alt="" />
+          </div>
+        </div>
+        <div class="product-heading">
+          <h2>Products</h2>
+        </div>
+        <hr />
+        <div class="product-list">
+          <div class="ourproductsBox">
+            <img
+              class="product-images"
+              src="./sarpanch-withotsugar.JPEG"
+              alt="" />
+          </div>
+          <div class="ourproductsBox">
+            <img class="product-images" src="./sarpanchregular-2.JPEG" alt="" />
+          </div>
+          <div class="ourproductsBox">
+            <img class="product-images" src="./sarpanchjaggery-3.JPEG" alt="" />
+          </div>
+          <div class="ourproductsBox">
+            <img class="product-images" src="./sarpanch-blacktea.JPEG" alt="" />
+          </div>
+          <div class="ourproductsBox">
+            <img class="product-images" src="./Sarpanchlemon-4.JPEG" alt="" />
+          </div>
+          <div class="ourproductsBox">
+            <img class="product-images" src="./sarpancrem-roll.JPEG" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="container-4" id="franchise">
+        <div class="franch-top">
+          <div class="franch_top-left">
+            <h1>EXPLORE A BUSINESS OPPORTUNI-TEA!</h1>
+            <h5>
+              Yewale tea, based out of Pune, Maharashtra, has been winning the
+              hearts of all tea lovers in Pune and is now set out to stretch and
+              expand its business not only in Maharashtra but all over the
+              country
+            </h5>
+          </div>
+          <div class="franch_top-right">
+            <img src="./kettle.PNG" alt="" />
+          </div>
+        </div>
+        <div class="franch-mid">
+          <div class="franchmidd-left">
+            <img class="franch-midd-img" src="./Sarpanch-2.PNG" alt="" />
+          </div>
+          <div class="franchmidd-right">
+            <h1>JOIN HANDS WITH YEWALE TEA</h1>
+            <h4>
+              Unlike other tea shops in India, Yewale Amruttulya makes tea only
+              out of milk and offers other varieties made of jaggery, ginger,
+              lemon etc. The tea powder used for making the tea is unique and is
+              prepared at Yewale's house to ensure seamless taste, quality and
+              uncompromised flavour at each of the franchise locations.
+            </h4>
+            <h2>Reasons to buy the franchise</h2>
+            <h4>
+              Low investment high returns Quality assurance 5 years support to
+              the franchise: Support for Operation, Marketing, Sales, Technical,
+              Training, 24*7 Customer Care Unique taste Use of advanced
+              technology
+            </h4>
+          </div>
+        </div>
+        <div class="franch-bottm">
+          <div class="franch-bot-left">
+            <img class="kettle-img" src="./kettle.PNG" alt="" />
+          </div>
+          <div class="franch-bot-right">
+            <h1 class="franchhead">GET A FRANCHISE</h1>
+            <form action="submit">
+              <div class="franchname-field">
+                <input class="fr" type="text" placeholder=" full name" />
+                <input class="fr" type="number" placeholder="contact number" />
+                <input class="fr" type="email" placeholder="email" />
+                <input class="fr" type="text" placeholder="enter your city" />
+                <input
+                  class="franchinput"
+                  type="text"
+                  placeholder="enter your message" />
+              </div>
+              <button class="franchsend-message">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container-5" id="gallery">
+        <div class="gallery-1">
+          <div class="gallery-leftheading">
+            <h1>GALLERY !</h1>
+            <h5>
+              Yewale tea, based out of Pune, Maharashtra, has been winning the
+              hearts of all tea lovers in Pune and is now set out to stretch and
+              expand its business not only in Maharashtra but all over the
+              country
+            </h5>
+          </div>
+          <div class="gallery-right">
+            <img class="gallerykettle-img" src="./kettle.PNG" alt="" />
+          </div>
+        </div>
+        <div class="gallery-2">
+          <h1 class="gallerypic-heading">PHOTO GALLERY</h1>
+          <div class="gallery-photoslist">
+            <img class="gallery-pic" src="./franch.jpg" alt="" />
+            <img class="gallery-pic" src="./franch2.jpg" alt="" />
+            <img class="gallery-pic" src="./franch3.jpg" alt="" />
+            <img class="gallery-pic" src="./franch4.jpg" alt="" />
+            <img class="gallery-pic" src="./franch5.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="container-6" id="contact">
+        <div class="contact-top">
+          <div class="cont-left">
+            <h1>CONTACT US</h1>
+            <h6>
+              Premium quality, sought after taste, carefully curated recipes,
+              the original flavour of teas and some snack options that will
+              refresh you from within. Explore our range of teas, beverages and
+              other food products below.
+            </h6>
+          </div>
+          <div class="cont-right">
+            <img src="./Sarpanch-2.PNG" alt="" />
+          </div>
+        </div>
+        <div class="middle">
+          <div class="middle-content1">
+            <h4>CALL TODAY</h4>
+            <span>9158052727</span>
+          </div>
+          <div class="middle-content2">
+            <h4>REQUEST A QUOTE</h4>
+            <span>9158052727</span>
+          </div>
+          <div class="middle-content3">
+            <h4>EMAIL US</h4>
+            <span>9158052727</span>
+          </div>
+        </div>
+        <div class="contact-heading">
+          <h1>GET IN TOUCH</h1>
+        </div>
+        <div class="first-container">
+          <div class="icons-left">
+            <div class="address">
+              <div class="add-icon">
+                <i class="fa-solid fa-location-dot contact-icon"></i>
+              </div>
+              <div class="add-text">
+                <span>Address</span>
+                <span>pune</span>
+              </div>
+            </div>
+            <div class="email">
+              <div class="mail-icon">
+                <i class="fa-solid fa-envelope contact-icon"></i>
+              </div>
+              <div class="mail-text">
+                <span>Email</span>
+                <span>pranavdate908@gmail.com</span>
+              </div>
+            </div>
+            <div class="phone">
+              <div class="call-icon">
+                <i class="fa-solid fa-phone contact-icon"></i>
+              </div>
+              <div class="call-text">
+                <span>Call</span>
+                <span>9158052727</span>
+              </div>
+            </div>
+          </div>
+          <div class="input-right">
+            <div class="name-field">
+              <input class="first-last" type="text" placeholder=" full name" />
+              <input
+                class="first-last"
+                type="number"
+                placeholder="contact number" />
+            </div>
+            <div class="input-message">
+              <input type="email" placeholder="email" />
+              <input type="text" placeholder="enter your message" />
+            </div>
+            <button class="send-message">Send Message</button>
+          </div>
+        </div>
+      </div>
+      <div class="lastpage">
+<div class="last-1">
+<img class="lastimg" src="./logo-2.PNG" alt="">
+<p>Yewale tea, based out of Pune, Maharashtra, has been winning the hearts of all tea lovers in Pune and is now set out to stretch and expand its business not only in Maharashtra but all over the country.</p>
+</div>
+
+<div class="last-2">
+  <h2>QUICK LINKS</h2>
+  <a href="#home"> <span>Home</span></a>
+        <a href="#about"><span>About Us</span></a>
+        <a href="#products"><span>Products</span></a>
+        <a href="#gallery"><span>Gallery</span></a>
+        <a href="#franchise"><span>Get a franchise</span></a>
+        <a href="#contact"><span>Contact Us</span></a>
+</div>
+<div class="last-3">
+  <h2>GET IN TOUCH</h2>
+  <div class="last-icons">
+    <div class="address">
+      <div class="add-icon">
+        <i class="fa-solid fa-location-dot contact-icon"></i>
+      </div>
+      <div class="add-text">
+        <span>Address</span>
+        <span>pune</span>
       </div>
     </div>
-
-    <div class="container-2" id="about">
-      <h4>About Us</h4>
-      <div class="profile"></div>
-      <div class="details"></div>
-    </div>
-    <div class="container-3" id="products">
-      <div class="product-top">
-        <div class="left">
-          <h1>PREMIUM QUALI-TEA PRODUCTS PLEN-TEA!</h1>
-          <h6>
-            Premium quality, sought after taste, carefully curated recipes,
-            the original flavour of teas and some snack options that will
-            refresh you from within. Explore our range of teas, beverages and
-            other food products below.
-          </h6>
-        </div>
-        <div class="right">
-          <img src="./sarpnch1.PNG" alt="" />
-        </div>
+    <div class="email">
+      <div class="mail-icon">
+        <i class="fa-solid fa-envelope contact-icon"></i>
       </div>
-      <div class="product-heading">
-        <h2>Products</h2>
-      </div>
-      <hr>
-      <div class="product-list">
-        <div class="ourproductsBox">
-          <img class="product-images" src="./sarpanchtea-1.JPEG" alt="" />
-        </div>
-        <div class="ourproductsBox">
-          <img class="product-images" src="./sarpanchregular-2.JPEG" alt="" />
-
-        </div>
-        <div class="ourproductsBox">
-          <img class="product-images" src="./sarpanchjaggery-3.JPEG" alt="" />
-
-        </div>
-        <div class="ourproductsBox">
-          <img class="product-images" src="./Sarpanchlemon-4.JPEG" alt="" />
-
-        </div>
-        <div class="ourproductsBox">
-          <img class="product-images" src="./sarpancrem-roll.JPEG" alt="" />
-
-        </div>
-
-
+      <div class="mail-text">
+        <span>Email</span>
+        <span>pranavdate908@gmail.com</span>
       </div>
     </div>
-    <div class="container-4" id="gallery">
-      <h4>Gallery</h4>
-    </div>
-    <div class="container-5" id="contact">
-      <div class="contact-top">
-        <div class="cont-left">
-          <h1>CONTACT US</h1>
-          <h6>
-            Premium quality, sought after taste, carefully curated recipes,
-            the original flavour of teas and some snack options that will
-            refresh you from within. Explore our range of teas, beverages and
-            other food products below.
-          </h6>
-        </div>
-        <div class="cont-right">
-          <img src="./sarpnch1.PNG" alt="" />
-        </div>
+    <div class="phone">
+      <div class="call-icon">
+        <i class="fa-solid fa-phone contact-icon"></i>
       </div>
-      <div class="middle">
-        <div class="middle-content1">
-
-          <h4>CALL TODAY</h4><span>9158052727</span>
-        </div>
-        <div class="middle-content2">
-          <h4>REQUEST A QUOTE</h4><span>9158052727</span>
-        </div>
-        <div class="middle-content3">
-          <h4>EMAIL US</h4><span>9158052727</span>
-        </div>
-
-      </div>
-      <div class="contact-heading">
-        <h1>GET IN TOUCH</h1>
-      </div>
-      <div class="first-container">
-        <div class="icons-left">
-          <div class="address">
-            <div class="add-icon">
-              <i class="fa-solid fa-location-dot contact-icon"></i>
-            </div>
-            <div class="add-text">
-              <span>Address</span>
-              <span>pune</span>
-            </div>
-          </div>
-          <div class="email">
-            <div class="mail-icon">
-              <i class="fa-solid fa-envelope contact-icon"></i>
-            </div>
-            <div class="mail-text">
-              <span>Email</span>
-              <span>pranavdate908@gmail.com</span>
-            </div>
-          </div>
-          <div class="phone">
-            <div class="call-icon">
-              <i class="fa-solid fa-phone contact-icon"></i>
-            </div>
-            <div class="call-text">
-              <span>Call</span>
-              <span>9158052727</span>
-            </div>
-          </div>
-        </div>
-        <div class="input-right">
-          <div class="name-field">
-            <input class="first-last" type="text" placeholder=" full name" />
-            <input class="first-last" type="number" placeholder="contact number" />
-          </div>
-          <div class="input-message">
-            <input type="email" placeholder="email" />
-            <input type="text" placeholder="enter your message" />
-          </div>
-          <button class="send-message">Send Message</button>
-        </div>
+      <div class="call-text">
+        <span>Call</span>
+        <span>9158052727</span>
       </div>
     </div>
   </div>
-  <script src="./script.js"></script>
-</body>
+  <div class="lastepage-footer">
+    <i class="fa-brands  fa-facebook-f ic"></i>
+    <i class="fa-brands fa-whatsapp ic"></i>
+    <i class="fa-brands fa-instagram ic"></i>
+    <i class="fa-brands fa-youtube ic"></i>
 
+  </div>
+</div>
+
+      </div>
+
+    <div class="footer">
+      <a href="#franchise"> <h3>GET A FRANCHISE</h3></a>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>

@@ -33,7 +33,7 @@ function startSlider() {
 
 setInterval(() => {
   startSlider();
-}, 3000);
+}, 4000);
 
 let Slide = 0;
 
@@ -58,7 +58,7 @@ function startSlider() {
 
 setInterval(() => {
   startSlider();
-}, 5000);
+}, 4000);
 
 // slider 2
 let activeSlide = 0;
@@ -82,4 +82,4 @@ function startSlider2() {
 
 setInterval(() => {
   startSlider2();
-}, 3000);
+}, 4000);
