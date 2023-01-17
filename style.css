@@ -12,7 +12,9 @@ html {
 }
 
 body {
-  background: #EADDCD;
+  background: #eee8e1;
+  /* position: fixed; */
+  /* overflow-y: scroll; */
   /* background-image: url("./background.webp");
     background-repeat: no-repeat;
     background-size: cover; */
@@ -205,6 +207,7 @@ img {
 .abt-top{
 width: 100%;
 display: flex;
+height: 600px;
 align-items: center;
 /* justify-content: center; */
 }
@@ -223,8 +226,8 @@ width: 55%;
 
 }
 .roadmap{
-  height: 500px;
-  width: 900px;
+  height: 400px;
+  width: 700px;
 }
 .abt-1{
   padding: 1rem;
@@ -282,15 +285,16 @@ margin-left: 15rem;
   justify-content: center;
 }
 .team-box{
-  background: rgb(185, 17, 227);
+  background: rgb(224, 217, 199);
   /* text-align: center; */
   align-items: center;
   position: relative;
   display: flex;
   justify-content: center;
-  justify-content: space-between;
+  gap: 1.5rem;
+  /* justify-content: space-between; */
   flex-direction: column;
-  padding:1rem;
+  padding:.5rem;
   width: 350px;
   height: 450px;
   margin: 1rem 1rem;
@@ -304,13 +308,13 @@ margin-left: 15rem;
   border-color: black;
   border-radius: 100%;
 }
-.team-footer{
+/* .team-footer{
   display: flex;
   gap: 2rem;
   font-size: 1.5rem;
-}
+} */
 .ic{
-  background: white;
+  background: rgb(253, 211, 187);
   border-radius: 100%;
   padding: .7rem;
 }
@@ -320,6 +324,7 @@ margin-left: 15rem;
 }
 .post{
   font-size: 1.5rem;
+  margin: 1rem;
 
 }
 .container-3 {
@@ -614,18 +619,21 @@ gap: 1rem;
 }
 
 .contact-icon {
-  height: 60px;
-  width: 60px;
-  background: rgb(219, 110, 14);
+  height: 55px;
+  width: 55px;
+  cursor: pointer;
+  background: rgb(221, 164, 114);
   font-size: 1.5rem;
   border-radius: 1rem;
-  padding: 1.1rem;
+  padding: 1rem;
   /* margin: .5rem; */
 }
 
 .address {
   display: flex;
   margin: 0.5rem;
+  align-items: center;
+  gap: 1rem;
   /* padding: .5rem; */
 }
 
@@ -638,6 +646,8 @@ gap: 1rem;
 .email {
   display: flex;
   margin: 0.5rem;
+  align-items: center;
+  gap: 1rem;
   /* padding: .5rem; */
 }
 
@@ -650,6 +660,8 @@ gap: 1rem;
 .phone {
   display: flex;
   margin: 0.5rem;
+  align-items: center;
+  gap: 1rem;
 }
 
 .call-text {
