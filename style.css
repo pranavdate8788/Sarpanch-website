@@ -7,6 +7,9 @@
   font-family: "DM Sans", sans-serif;
 }
 
+img{
+  object-fit: contain3333;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -81,13 +84,8 @@ body {
   transform: translateX(360px);
 }
 
-.left {
-  margin: .3rem;
-  width: 50%;
-}
-
 .logo {
-  width:80px;
+  width:130px;
   height: auto;
   object-fit: cover;
 }
@@ -224,7 +222,7 @@ img {
   border-bottom: 1px dashed #ddd;
   border-top: 1px dashed #ddd;
   margin: 3rem 0;
-  background: rgba(255, 7, 7, 0.071);
+  background: rgba(255, 139, 7, 0.071);
 }
 .about section{
   color: #ddd;
@@ -232,6 +230,9 @@ img {
   padding: 2rem 3rem;
   font-size: 2rem;
   
+}
+.about section h1{
+  color: orange;
 }
 .journey{
   display: flex;
@@ -896,9 +897,26 @@ input {
 
 .footer {
   background: rgb(51 65 85);
+  position: fixed;
+  bottom: 2rem;
+  right: .5rem;
+  width: 200px;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  box-shadow: -2px -12px 30px rgba(0 ,0,0,.5);
+  border: 1px dashed orange;
+}
+.footer i{
+  color: red;
+  font-size: 1rem;
+  cursor: pointer;
+
 }
 .footer a{
-  color: #ddd;
+  color: orange;
+  font-weight: 700;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
