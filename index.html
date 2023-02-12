@@ -12,6 +12,34 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init("vVCkRHWv3Bz1eu_hf");
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          emailjs.sendForm("service_0lbvton", "template_2po4v2q", this).then(
+            function () {
+              console.log("SUCCESS!");
+            },
+            function (error) {
+              console.log("FAILED...", error);
+            }
+          );
+        });
+    };
+  </script>
 </head>
 
 <body>
@@ -222,21 +250,23 @@
       <div class="franch-bot-left">
         <img class="kettle-img" src="./kettle.PNG" alt="" />
       </div>
+     
       <div class="franch-bot-right">
+        <form action="" id="contact-form">
         <h1 class="franchhead">GET A FRANCHISE</h1>
-        <form action="submit">
+        
           <div class="franchname-field">
-            <input class="fr" type="text" placeholder=" full name" />
-            <input class="fr" type="number" placeholder="contact number" />
-            <input class="fr" type="email" placeholder="email" />
-            <input class="fr" type="text" placeholder="enter your city" />
-            <input class="franchinput" type="text" placeholder="enter your message" />
+            <input class="fr" name="user_name" type="text" placeholder=" full name" />
+            <input class="fr" name="contact_number" type="number" placeholder="contact number" />
+            <input class="fr" name="user_email" type="email" placeholder="email" />
+            <input class="fr" name="user_city" type="text" placeholder="enter your city" />
+            <input class="franchinput" name="message" type="text" placeholder="enter your message" />
           </div>
-          <button class="franchsend-message">Send Message</button>
+          <button class="franchsend-message" type="submit" value="send">Send Message</button>
         </form>
+        </div>
       </div>
-    </div>
-  </div>
+    
   <div class="container-5" id="gallery">
     <div class="gallery-1">
       <div class="gallery-leftheading">
@@ -330,15 +360,17 @@
         </div>
       </div>
       <div class="input-right">
+        <form  id="contact-form">
         <div class="name-field">
-          <input class="first-last" type="text" placeholder=" full name" />
-          <input class="first-last" type="number" placeholder="contact number" />
+          
+          <input class="first-last" name="user_name" type="text" placeholder=" full name" />
+          <input class="first-last" name="contact_number" type="number" placeholder="contact number" />
         </div>
         <div class="input-message">
-          <input type="email" placeholder="email" />
-          <input type="text" placeholder="enter your message" />
+          <input type="email" placeholder="email" name="user_email" />
+          <input type="text" placeholder="enter your message" name="message" />
         </div>
-        <button class="send-message">Send Message</button>
+        <button class="send-message" type="submit" value="send">Send Message</button></form>
       </div>
     </div>
   </div>
