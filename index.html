@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="favicon.ico">
-  <title>Sarpanch - Amruttulya</title>
+  <title>Sarpanch - Amrutulya</title>
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -38,6 +38,22 @@
             }
           );
         });
+
+        document
+        .getElementById("contact-form2")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          emailjs.sendForm("service_0lbvton", "template_we2xj32", this).then(
+            function () {
+              console.log("SUCCESS!");
+            },
+            function (error) {
+              console.log("FAILED...", error);
+            }
+          );
+        });
+
     };
   </script>
 </head>
@@ -360,7 +376,7 @@
         </div>
       </div>
       <div class="input-right">
-        <form  id="contact-form">
+        <!-- <form  id="contact-form2">
         <div class="name-field">
           
           <input class="first-last" name="user_name" type="text" placeholder=" full name" />
@@ -370,7 +386,17 @@
           <input type="email" placeholder="email" name="user_email" />
           <input type="text" placeholder="enter your message" name="message" />
         </div>
-        <button class="send-message" type="submit" value="send">Send Message</button></form>
+        <button class="send-message" type="submit" value="send">Send Message</button></form> -->
+        <form action="" id="contact-form2">
+          
+            <div class="franchname-field">
+              <input class="fr" name="user_name" type="text" placeholder=" full name" />
+              <input class="fr" name="contact_number" type="number" placeholder="contact number" />
+              <input class="fr" name="user_email" type="email" placeholder="email" />
+              <input class="franchinput" name="message" type="text" placeholder="enter your message" />
+            </div>
+            <button class="franchsend-message" type="submit" value="send">Send Message</button>
+          </form>
       </div>
     </div>
   </div>
